@@ -1,0 +1,129 @@
+:root{
+    --pale-blue:  hsl(225, 100%, 94%);
+    --desaturated-blue:  hsl(224, 23%, 55%);
+    --dark-blue:  hsl(223, 47%, 23%);
+    --bright-blue:  hsl(245, 75%, 52%);
+    --very-pale-blue:  hsl(225, 100%, 98%);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: url(../images/pattern-background-desktop.svg);
+    background-color: var(--pale-blue);
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: relative;
+    height: 100vh;
+    font-size: 16px;
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+.card-container{
+    background-color: var(--very-pale-blue);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 400px;
+    display: grid;
+    grid-template-rows: 1 2fr;
+    justify-items: center;
+    align-items: center;
+    height: 85%;
+    border-radius: 25px;
+}
+
+#header-img{
+    align-self: flex-start;
+    border-radius: 25px 25px 0px 0px;
+    width: 100%;
+}
+
+#title{
+    color: rgb(34, 34, 34);
+    font-size: 1.6em;
+    font-weight: 900;
+}
+
+#description{
+    width: 80%;
+    text-align: center;
+    color: var(--desaturated-blue);
+}
+
+.card-plan{
+    width: 80%;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    align-items: center;
+    background-color:hsl(227, 70%, 96%);
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.price-info h5{
+    font-size: 1em;
+    font-weight: 700;
+}
+
+.price-info span{
+    font-size: 0.9em;
+    color: var(--desaturated-blue);
+}
+
+#change-link{
+    justify-self: end;
+    font-size: 0.9em;
+    font-weight: 700;
+    transition: all 0.2s;
+}
+
+#change-link:hover{
+    text-decoration: none;
+    color: hsla(245, 75%, 52%, 0.692);
+}
+
+.button{
+    border: none;
+    cursor: pointer;
+    width: 80%;
+    border-radius: 10px;
+    padding: 20px;
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 1em;
+    font-weight: 700;
+}
+
+.button.procced{
+    background-color: var(--bright-blue);
+    color: var(--very-pale-blue);
+    transition: all 0.2s;
+}
+
+.button.procced:hover{
+    opacity: 0.7;
+}
+
+.button.cancel{
+    background-color: var(--very-pale-blue);
+    color: var(--desaturated-blue);
+    transition: all 0.2s;
+}
+
+.button.cancel:hover{
+    color: var(--dark-blue);
+}
+
+@media screen and (max-width:375px){
+    .card-container{
+        width: 300px;
+    }
+    .button{
+        font-size: 0.8em;
+    }
+}
