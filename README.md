@@ -9,7 +9,6 @@ This is a solution to the [Order summary card challenge on Frontend Mentor](http
 - [My process](#my-process)
   - [Built with](#built-with)
 - [Author](#author)
-- [Acknowledgments](#acknowledgments)
 
 ## Overview
 
@@ -21,8 +20,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://www.frontendmentor.io/solutions/order-summary-component-using-htmlcss-hPyLLjC_5)
-- Live Site URL: [Add live site URL here](https://thelaucha.github.io/Order-summary---Frontend-Mentor/)
+- Solution URL: [Link](https://www.frontendmentor.io/solutions/order-summary-component-using-htmlcss-hPyLLjC_5)
+- Live Site URL: [Link](https://thelaucha.github.io/Order-summary---Frontend-Mentor/)
 
 ## My process
 
